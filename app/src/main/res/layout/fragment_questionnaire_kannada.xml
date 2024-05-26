@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionnaireFragmentKannada">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. ನೀವು ಎಂದಾದರೂ ಫೈಲೇರಿಯಾ ರೋಗ ಹರಡಿರುವ ಪ್ರದೇಶಗಳಲ್ಲಿ ವಾಸಿಸಿದ್ದೀರಾ ಅಥವಾ ಪ್ರಯಾಣಿಸಿದ್ದೀರಾ?"
+                android:textSize="15dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioGroup
+                android:id="@+id/question1_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question1_option_a"
+                    android:layout_width="194dp"
+                    android:layout_height="36dp"
+                    android:text="ಹೌದು" />
+
+                <RadioButton
+                    android:id="@+id/question1_option_b"
+                    android:layout_width="193dp"
+                    android:layout_height="33dp"
+                    android:text="ಇಲ್ಲ" />
+
+                <RadioButton
+                    android:id="@+id/question1_option_c"
+                    android:layout_width="192dp"
+                    android:layout_height="31dp"
+                    android:text="ಖಚಿತವಾಗಿಲ್ಲ" />
+            </RadioGroup>
+
+            <!-- Question 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. ನೀವು ಹೆಚ್ಚಾಗಿ ಹೊರಾಂಗಣದಲ್ಲಿ ಸಮಯ ಕಳೆಯುತ್ತೀರಾ, ವಿಶೇಷವಾಗಿ ಸೊಳ್ಳೆಗಳು ಇರುವಾಗ ಮುಸ್ಸಂಜೆ ಮತ್ತು ಮುಂಜಾನೆ ಸಮಯದಲ್ಲಿ ಹೆಚ್ಚು ಸಕ್ರಿಯ?"
+                android:textSize="16dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioGroup
+                android:id="@+id/question2_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/question2_option_a"
+                    android:layout_width="192dp"
+                    android:layout_height="34dp"
+                    android:text="ಹೌದು" />
+
+                <RadioButton
+                    android:id="@+id/question2_option_b"
+                    android:layout_width="192dp"
+                    android:layout_height="32dp"
+                    android:text="ಇಲ್ಲ" />
+
+                <RadioButton
+                    android:id="@+id/question2_option_c"
+                    android:layout_width="194dp"
+                    android:layout_height="36dp"
+                    android:text="ಸಾಂದರ್ಭಿಕವಾಗಿ" />
+            </RadioGroup>
+
+            <!-- Repeat similar layout for remaining questions -->
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>
